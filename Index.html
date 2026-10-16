@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Soumithra V | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #07111f;
+            color: #e5edf8;
+            line-height: 1.7;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        header {
+            background: #0b1728;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            border-bottom: 1px solid #1e3450;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #60a5fa;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #cbd5e1;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #60a5fa;
+        }
+
+        section {
+            padding: 70px 8%;
+        }
+
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .tag {
+            color: #60a5fa;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: clamp(38px, 7vw, 65px);
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        h1 span {
+            color: #60a5fa;
+        }
+
+        .hero p {
+            max-width: 650px;
+            color: #b6c4d8;
+            font-size: 17px;
+            margin-bottom: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #2563eb;
+            border-radius: 8px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #3b82f6;
+        }
+
+        .section-title {
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+
+        .section-intro {
+            color: #9fb0c7;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: #0d1b2e;
+            border: 1px solid #203650;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            color: #93c5fd;
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #c0ccdc;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .skill {
+            background: #142943;
+            border: 1px solid #294563;
+            padding: 9px 15px;
+            border-radius: 20px;
+            color: #bfdbfe;
+            font-size: 14px;
+        }
+
+        .project-number {
+            color: #60a5fa;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+        }
+
+        .project-tech {
+            color: #7dd3fc;
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+
+        .card ul {
+            padding-left: 22px;
+            margin-top: 15px;
+            color: #c0ccdc;
+        }
+
+        .card li {
+            margin-bottom: 8px;
+        }
+
+        .contact-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #8799b1;
+            border-top: 1px solid #203650;
+            background: #0b1728;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 18px 5%;
+            }
+
+            nav {
+                gap: 12px;
+            }
+
+            section {
+                padding: 50px 6%;
+            }
+
+            .hero {
+                min-height: 65vh;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header>
+        <div class="logo">Soumithra V.</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+
+    <!-- HOME -->
+    <section class="hero" id="home">
+        <div class="tag">WELCOME TO MY PORTFOLIO</div>
+
+        <h1>Hi, I'm <span>Soumithra V</span></h1>
+
+        <p>
+            A Computer Science Engineering student specializing in
+            Artificial Intelligence and Machine Learning. I enjoy
+            learning new technologies and creating projects that
+            improve my technical skills.
+        </p>
+
+        <a href="#projects" class="button">Explore My Projects</a>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+
+        <p class="section-intro">
+            Get to know me and my interests.
+        </p>
+
+        <div class="card">
+            <p>
+                I am Soumithra V, a second-year B.E. Computer Science
+                and Engineering student specializing in Artificial
+                Intelligence and Machine Learning at Government
+                College of Technology, Coimbatore.
+            </p>
+
+            <br>
+
+            <p>
+                I am interested in programming, web development,
+                artificial intelligence, and game development.
+                I enjoy building projects and learning new concepts
+                through practical experience.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <h2 class="section-title">My Skills</h2>
+
+        <p class="section-intro">
+            Technologies and areas I am learning.
+        </p>
+
+        <div class="skills">
+            <span class="skill">C Programming</span>
+            <span class="skill">Java</span>
+            <span class="skill">Python</span>
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">Web Development</span>
+            <span class="skill">Problem Solving</span>
+            <span class="skill">AI and ML</span>
+            <span class="skill">Game Development</span>
+        </div>
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h2 class="section-title">My Projects</h2>
+
+        <p class="section-intro">
+            Projects I have completed.
+        </p>
+
+
+        <!-- PROJECT 1 -->
+        <div class="card">
+            <div class="project-number">PROJECT 01</div>
+
+            <h3>Voice Calculator Website</h3>
+
+            <div class="project-tech">
+                HTML • CSS • JavaScript • Voice Recognition
+            </div>
+
+            <p>
+                Voice Calculator is a voice-controlled calculator
+                website that allows users to perform mathematical
+                calculations using voice commands. Users can speak
+                their calculations instead of entering them manually.
+                The website processes the voice input and displays
+                the calculated result, providing a hands-free
+                calculation experience.
+            </p>
+
+            <ul>
+                <li>Performs calculations using voice commands.</li>
+                <li>Accepts spoken mathematical expressions.</li>
+                <li>Processes voice input to
